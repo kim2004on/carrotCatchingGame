@@ -1,0 +1,115 @@
+/* 메인 */
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+/* 게임 */
+.game {
+  width: 800px;
+  height: 500px;
+  background: url(img/background.png) center/cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.game__btn {
+  width: 60px;
+  height: 60px;
+  background-color: wheat;
+  font-size: 24px;
+  border: 4px solid black;
+  transition: transform 300ms ease-in;
+}
+.game__btn:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  border: 4px solid black;
+  font-size: 32px;
+  margin: 8px 0;
+  border-radius: 20px;
+  user-select: none;
+  cursor: auto;
+  visibility: hidden;
+}
+.game__score {
+  width: 50px;
+  height: 53px;
+  font-size: 35px;
+  background-color: darksalmon;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid black;
+  color: white;
+  user-select: none;
+  cursor: auto;
+  visibility: hidden;
+}
+
+.game__field {
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 팝업 */
+.pop-up {
+  width: 400px;
+  height: 140px;
+  color: white;
+  background-color: #00000090;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  transform: translateY(-150%);
+}
+
+.pop-up--hide {
+  display: none;
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pop-up__message {
+  display: block;
+  font-size: 38px;
+}
+
+/* 아이템 */
+.carrot,
+.bug {
+  transition: transform 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
